@@ -5,4 +5,4 @@ import reducers from "./reducers";
 
 const store = createStore ( state,reducer );
 
-export default store
+export default store;
