@@ -19,16 +19,9 @@ messages
 } = state;
 
 ReactDOM.render(
-  <App 
-    taskItem={taskItem}
-    dateTime={dateTime}
-    newComments={newComments}
-    newTasks={newTasks}
-    newOrders={newOrders}
-    tickets={tickets}
-    orders={orders} 
-    messages={messages}
-    tasks={tasks}
-    />,
+<Provider store = {store}>
+<App />
+</Provider>,
+  
   document.getElementById("root")
 );
